@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dm5m3ucvdieqc"]
+
+[ext_resource type="Script" uid="uid://bsx8c5upmtx7g" path="res://title_screen.gd" id="1_ak2if"]
+[ext_resource type="Texture2D" uid="uid://w2etlrlqw6f" path="res://Colourful Cartoon City Stage Burst.png" id="1_v6p8y"]
+
+[node name="TitleScreen" type="Node2D" unique_id=96270774]
+script = ExtResource("1_ak2if")
+
+[node name="BackGround" type="TextureRect" parent="." unique_id=1711476843]
+offset_right = 1686.1613
+offset_bottom = 940.0
+scale = Vector2(0.68898976, 0.68723)
+texture = ExtResource("1_v6p8y")
+stretch_mode = 2
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=2106199523]
+clip_contents = false
+offset_left = 243.0
+offset_top = -6.0
+offset_right = 941.0
+offset_bottom = 189.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 108
+text = "WarriorWare"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=53116017]
+offset_left = 500.0
+offset_top = 221.0
+offset_right = 649.0
+offset_bottom = 519.0
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1707197587]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="VBoxContainer" unique_id=951378525]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Settings
+"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1472954876]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Quit
+"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
