@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://b0v38b6626573"]
+
+[ext_resource type="Script" uid="uid://c11264c383in7" path="res://level_scene.gd" id="1_3mivm"]
+[ext_resource type="Texture2D" uid="uid://w2etlrlqw6f" path="res://Colourful Cartoon City Stage Burst.png" id="1_187gu"]
+[ext_resource type="Texture2D" uid="uid://couu21ls1kr70" path="res://Glossy Pink Heart Sticker Icon.png" id="3_lwxgr"]
+
+[node name="level_scene" type="Node2D" unique_id=617829531]
+script = ExtResource("1_3mivm")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1319104924]
+offset_right = 1672.0
+offset_bottom = 940.0
+scale = Vector2(0.68839353, 0.689201)
+texture = ExtResource("1_187gu")
+
+[node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=1168970065]
+offset_left = 924.0
+offset_top = 11.0
+offset_right = 7810.0
+offset_bottom = 1156.0
+scale = Vector2(0.031801827, 0.04304367)
+
+[node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=1957035933]
+layout_mode = 2
+texture = ExtResource("3_lwxgr")
+
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=1537368361]
+layout_mode = 2
+texture = ExtResource("3_lwxgr")
+
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=903249068]
+layout_mode = 2
+texture = ExtResource("3_lwxgr")
+
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=1130897551]
+layout_mode = 2
+texture = ExtResource("3_lwxgr")
+
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=1612558544]
+layout_mode = 2
+texture = ExtResource("3_lwxgr")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=2124590428]
+offset_left = 470.0
+offset_top = 5.0
+offset_right = 714.0
+offset_bottom = 61.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level#"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=192375804]
+offset_left = 1014.0
+offset_top = 55.0
+offset_right = 1134.0
+offset_bottom = 117.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"

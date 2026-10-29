@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://b3tt1b1pd1t50"]
+
+[ext_resource type="Script" uid="uid://cl4o4fybji5qy" path="res://minigame_2.gd" id="1_3qiw4"]
+[ext_resource type="Texture2D" uid="uid://0q625xyp4m4r" path="res://Cartoon Sky with Pink Metal Platform.png" id="1_ksr4o"]
+[ext_resource type="Texture2D" uid="uid://couu21ls1kr70" path="res://Glossy Pink Heart Sticker Icon.png" id="2_2425y"]
+[ext_resource type="Script" uid="uid://cmertw1202jfg" path="res://button_1.gd" id="3_5x31c"]
+[ext_resource type="PackedScene" uid="uid://bm05qsfqqeu2o" path="res://ThemedTimer.tscn" id="4_5x31c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ksr4o"]
+size = Vector2(95.831406, 20)
+
+[node name="Minigame_2" type="Node2D" unique_id=1711212246]
+script = ExtResource("1_3qiw4")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1003706495]
+scale = Vector2(0.68831915, 0.69735605)
+
+[node name="Background" type="TextureRect" parent="Parallax2D" unique_id=895077520]
+offset_right = 1672.0
+offset_bottom = 940.0
+scale = Vector2(0.99812764, 1.0164632)
+texture = ExtResource("1_ksr4o")
+
+[node name="Platfrom1" type="StaticBody2D" parent="." unique_id=1982371756]
+
+[node name="ColorRect" type="ColorRect" parent="Platfrom1" unique_id=1435064941]
+offset_top = 632.0
+offset_right = 1150.0
+offset_bottom = 648.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platfrom1" unique_id=1621036486]
+position = Vector2(575.4404, 640)
+scale = Vector2(12.011921, 0.7929675)
+shape = SubResource("RectangleShape2D_ksr4o")
+debug_color = Color(0.047058824, 0.5254902, 0.56078434, 1)
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=1226303558]
+offset_left = 230.0
+offset_top = 265.0
+offset_right = 1604.0
+offset_bottom = 1410.0
+scale = Vector2(0.06887138, 0.07223543)
+texture_normal = ExtResource("2_2425y")
+script = ExtResource("3_5x31c")
+
+[node name="Button_2" type="TextureButton" parent="." unique_id=83680699]
+offset_left = 730.0
+offset_top = 136.00002
+offset_right = 2109.3828
+offset_bottom = 1437.3003
+scale = Vector2(0.06887138, 0.07223543)
+texture_normal = ExtResource("2_2425y")
+script = ExtResource("3_5x31c")
+
+[node name="Button_3" type="TextureButton" parent="." unique_id=938631991]
+offset_left = 241.0
+offset_top = 475.00003
+offset_right = 1615.0
+offset_bottom = 1620.0
+scale = Vector2(0.06887138, 0.07223543)
+texture_normal = ExtResource("2_2425y")
+script = ExtResource("3_5x31c")
+
+[node name="Button_4" type="TextureButton" parent="." unique_id=1596040904]
+offset_left = 572.0
+offset_top = 366.0
+offset_right = 1946.0
+offset_bottom = 1511.0
+scale = Vector2(0.06887138, 0.07223543)
+texture_normal = ExtResource("2_2425y")
+script = ExtResource("3_5x31c")
+
+[node name="Themed Timer" parent="." unique_id=1094051385 instance=ExtResource("4_5x31c")]
+offset_left = 1082.0
+offset_right = 1152.4652
+offset_bottom = 60.774338
+scale = Vector2(0.9314876, 0.7528925)
+theme_override_colors/default_color = Color(0.002136234, 0.002136234, 0.0021362337, 1)
+theme_override_font_sizes/normal_font_size = 41
+text = "0.0"

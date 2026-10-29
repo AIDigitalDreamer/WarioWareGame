@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://pi7bybjbyot3"]
+
+[ext_resource type="Texture2D" uid="uid://lsya4j5c754k" path="res://Comic Game Over Cityscape.png" id="1_if853"]
+
+[node name="DeathScreen" type="Node2D" unique_id=1927732727]
+
+[node name="Background" type="TextureRect" parent="." unique_id=911352433]
+offset_right = 1672.0
+offset_bottom = 940.0
+scale = Vector2(0.99812764, 1.0164632)
+texture = ExtResource("1_if853")

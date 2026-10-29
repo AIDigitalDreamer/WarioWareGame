@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ckemy0upjpia0"]
+
+[ext_resource type="Script" uid="uid://bmyur8000q28b" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://yaqn1chqlmo7" path="res://Dynamic Cartoon Runner Sticker.png" id="2_i3pqv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eff5v"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1058856272]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2103573347]
+texture = ExtResource("2_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=408567049]
+shape = SubResource("CircleShape2D_eff5v")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=928755029]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1018465514]
+shape = SubResource("CircleShape2D_eff5v")
